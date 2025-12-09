@@ -23,14 +23,15 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ## 🧱 Methodology Diagram
 
-```markdown
-![SwinFSR Methodology](Figures/Methodology_Research.png)
+---
 
 
 #🚀 SwinFSR: Landmark-Guided Swin Transformer for Face Super-Resolution
 
 SwinFSR is a landmark-guided Swin Transformer model designed for 4× and 8× face super-resolution.
 It integrates dense landmark heatmaps with hierarchical shifted-window attention, enabling accurate reconstruction of identity-consistent facial details even under extreme low-resolution degradation.
+
+---
 
 ## 🔥 Key Features
 
@@ -45,6 +46,7 @@ Identity Preservation: Maintains consistent geometry around eyes, lips & nose
 Efficient Training: Lightweight and optimized for single-GPU setups
 
 Evaluation Metrics: PSNR (Y), SSIM (Y), LPIPS (RGB)
+---
 
 ## 🧩 Methodology Overview
 
