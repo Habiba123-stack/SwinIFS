@@ -41,10 +41,10 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ## 🚀 Training
 4× Super-Resolution
-- **python train_swinfsr.py --opt options/swinfsr/train_swinfsr_sr_celeba_x4.json**
+- **python train_evaluate_swinfsr.py --opt options/swinfsr/train_swinfsr_sr_celeba_x4.json**
 
 8× Super-Resolution
-- **python train_evaluate_swinfsr.py --opt options/swinfsr/train_swinfsr_x8.json**
+- **python train_evaluate_swinfsr.py --opt options/swinfsr/train_swinfsr-x8.json**
 
 ---
 
