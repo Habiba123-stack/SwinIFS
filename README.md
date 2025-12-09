@@ -27,12 +27,12 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 ![SwinFSR Methodology](Figures/Methodology_Research.png)
 
 
-🚀 SwinFSR: Landmark-Guided Swin Transformer for Face Super-Resolution
+#🚀 SwinFSR: Landmark-Guided Swin Transformer for Face Super-Resolution
 
 SwinFSR is a landmark-guided Swin Transformer model designed for 4× and 8× face super-resolution.
 It integrates dense landmark heatmaps with hierarchical shifted-window attention, enabling accurate reconstruction of identity-consistent facial details even under extreme low-resolution degradation.
 
-🔥 Key Features
+## 🔥 Key Features
 
 Landmark-Guided SR: Injects geometric priors using 5-point Gaussian heatmaps
 
@@ -46,20 +46,20 @@ Efficient Training: Lightweight and optimized for single-GPU setups
 
 Evaluation Metrics: PSNR (Y), SSIM (Y), LPIPS (RGB)
 
-🧩 Methodology Overview
+## 🧩 Methodology Overview
 
 SwinFSR fuses facial geometry (landmark heatmaps) with transformer-based local–global modeling.
 A shallow 3×3 convolution extracts low-level features, while stacked RSTBs model long-range dependencies and restore fine facial details.
 PixelShuffle reconstructs the high-resolution output, supported by a bicubic upsample skip connection for stable identity preservation.
 
-🧱 Methodology Diagram
+## 🧱 Methodology Diagram
 
-🖼 Visual Results
+## 🖼 Visual Results
 8× Face Super-Resolution (16 → 128)
 
 (You may add 4× results or comparison grids in this section.)
 
-📁 Project Structure
+## 📁 Project Structure
 SwinFSR/
 │── train_swinfsr.py                 # Training + validation
 │── test_swinfsr.py                  # Inference/testing (optional)
@@ -96,7 +96,7 @@ SwinFSR/
     ├── Methodology_Research.png
     └── x8.png
 
-📦 Dataset Preparation
+## 📦 Dataset Preparation
 
 SwinFSR is trained on CelebA, preprocessed into:
 
@@ -125,7 +125,7 @@ LR/X4_landmarks/test
 
 (and similarly for X8)
 
-🚀 Training
+## 🚀 Training
 4× Super-Resolution
 python train_swinfsr.py --opt options/swinfsr/train_swinfsr_sr_celeba_x4.json
 
@@ -133,7 +133,7 @@ python train_swinfsr.py --opt options/swinfsr/train_swinfsr_sr_celeba_x4.json
 python train_swinfsr.py --opt options/swinfsr/train_swinfsr_sr_celeba_x8.json
 
 
-Training performs:
+## Training performs:
 
 Automatic checkpoint saving
 
@@ -145,7 +145,7 @@ Automatic bicubic comparison
 
 Optional saving of SR visual outputs
 
-🔍 Testing / Inference
+## 🔍 Testing / Inference
 python test_swinfsr.py --opt options/swinfsr/train_swinfsr_sr_celeba_x4.json --save_results
 
 
@@ -156,7 +156,7 @@ results_swinfsr/
 
 You may also test on any custom LR image folder.
 
-📊 Evaluation Metrics
+## 📊 Evaluation Metrics
 
 SwinFSR uses standard metrics in the face SR literature:
 
@@ -176,7 +176,7 @@ FSRNet (CVPR 2018)
 
 SPARNet (TIP 2021)
 
-🧠 Model Architecture Summary
+## 🧠 Model Architecture Summary
 
 Input: 8 channels (RGB + 5 landmark heatmaps)
 
@@ -190,7 +190,7 @@ Reconstruction: 3×3 Conv
 
 Skip connection: Bicubic LR → HR
 
-🧪 Results Summary
+## 🧪 Results Summary
 
 SwinFSR achieves:
 
@@ -204,7 +204,7 @@ Lower LPIPS compared to CNN/GAN/SwinIR baselines
 
 Strong robustness on extreme low-resolution faces
 
-🤝 Acknowledgements
+## 🤝 Acknowledgements
 
 SwinFSR builds upon foundational codebases:
 
@@ -212,7 +212,7 @@ KAIR — https://github.com/cszn/KAIR
 
 SwinIR — https://github.com/JingyunLiang/SwinIR
 
-📝 Citation
+## 📝 Citation
 Shahzad.
 “SwinFSR: Landmark-Guided Swin Transformer for Identity-Preserving Face Super-Resolution.”
 MS Thesis, 2025.
