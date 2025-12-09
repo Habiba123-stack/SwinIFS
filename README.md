@@ -33,6 +33,10 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ---
 
+4× Face Super-Resolution (32 → 128)
+
+
+
 
 
 
