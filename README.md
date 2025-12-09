@@ -29,7 +29,7 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ## 🖼 Visual Results
 8× Face Super-Resolution (16 → 128)
-
+![X8 Results](Figures/x8.png)
 
 ---
 
@@ -67,7 +67,7 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 Results are stored in
 
-- **supperresolution/images**
+- **superresolution/images**
 
 
 You may also test on any custom LR image folder.
