@@ -1,6 +1,6 @@
-# 🚀 SwinFSR: Landmark-Guided Swin Transformer for Face Super-Resolution
+# 🚀 SwinIFS: Landmark-Guided Swin Transformer for Face Super-Resolution
 
-SwinFSR is a landmark-guided Swin Transformer model designed for **4× and 8× face super-resolution**.  
+SwinIFS is a landmark-guided Swin Transformer model designed for **4× and 8× face super-resolution**.  
 It integrates facial landmark heatmaps with a hierarchical Swin Transformer to reconstruct identity-consistent high-resolution facial images under severe degradation.
 
 ---
@@ -15,7 +15,7 @@ It integrates facial landmark heatmaps with a hierarchical Swin Transformer to r
 ---
 
 ## 🧩 Methodology Overview
-SwinFSR fuses facial geometry (landmark heatmaps) with transformer-based local–global feature modeling.  
+SwinIFS fuses facial geometry (landmark heatmaps) with transformer-based local–global feature modeling.  
 A shallow convolution extracts initial features, and stacked RSTBs enhance facial structure and texture.  
 PixelShuffle upsampling reconstructs the high-resolution output.
 
@@ -23,7 +23,7 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ## 🧱 Methodology Diagram
 
-![SwinFSR Methodology](Methodology_Research.png)
+![SwinIFS Methodology](Methodology_Research.png)
 
 ---
 
@@ -61,10 +61,10 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ## 🚀 Training
 4× Super-Resolution
-- **python train_evaluate_swinfsr.py --opt options/swinfsr/train_swinfsr_sr_celeba_x4.json**
+- **python train_evaluate_swinfsr.py --opt options/swinifs/train_swinifs_sr_celeba_x4.json**
 
 8× Super-Resolution
-- **python train_evaluate_swinfsr.py --opt options/swinfsr/train_swinfsr-x8.json**
+- **python train_evaluate_swinfsr.py --opt options/swinifs/train_swinifs-x8.json**
 
 ---
 
@@ -82,7 +82,7 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ## 🔍 Testing / Inference
 
-- **python train_evaluate_swinfsr.py --opt option/swinfsr/train_swinfsr_x4.json --save_results**
+- **python train_evaluate_swinfsr.py --opt option/swinfsr/train_swinifs_x4.json --save_results**
 
 
 Results are stored in
@@ -93,7 +93,7 @@ Results are stored in
 You may also test on any custom LR image folder.
 
 ## 📊 Evaluation Metrics
-SwinFSR uses standard metrics in the face SR literature:**
+SwinIFS uses standard metrics in the face SR literature:**
 
 - **PSNR (Y-channel)**
 
