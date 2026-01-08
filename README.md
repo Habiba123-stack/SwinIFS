@@ -88,7 +88,7 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ## 🔍 Testing / Inference
 
-- **python train_evaluate_swinfsr.py --opt option/swinfsr/train_swinifs_x4.json --save_results**
+- **python train_evaluate_swinfsr.py --opt option/swinfsr/train_swinfsr_x4.json --save_results**
 
 
 Results are stored in
