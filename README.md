@@ -51,11 +51,11 @@ PixelShuffle upsampling reconstructs the high-resolution output.
 
 ## SwinIFS: Google drive link (Our results)
 
-These are the resulte for x4 (upscaling):
+These are the resulte for 4x (upscaling):
 
 -**https://drive.google.com/drive/folders/1A4gJzkjmkvlK3R_gf-r7ApUw6C1K6H_q?usp=sharing**
 
-These are the resulte for x8 (upscaling):
+These are the resulte for 8x (upscaling):
 
 -**https://drive.google.com/drive/folders/1PpKmUwWkZSmsuOMZQc_xHLPRK0-6NJVM?usp=sharing**
 
